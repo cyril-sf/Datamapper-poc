@@ -1,7 +1,7 @@
 class Categorization
-  include DataMapper::Resource
+  include DataMapper::Mongo::Resource
 
-  property :id,         Serial
+  property :id,         ObjectId
   property :created_at, DateTime
 
   belongs_to :category

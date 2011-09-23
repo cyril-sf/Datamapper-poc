@@ -1,9 +1,9 @@
 class Comment
-  include DataMapper::Resource
+  include DataMapper::Mongo::Resource
 
   belongs_to :post
 
-  property :id,         Serial
+  property :id,         ObjectId
   property :posted_by,  String
   property :email,      String
   property :url,        String
