@@ -6,8 +6,8 @@ gem 'rails', '3.0.10'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2', '~> 0.2.11'
-# gem 'dm-mysql-adapter'
 gem 'data_mapper'
+gem 'dm-mysql-adapter'
 gem 'dm-mongo-adapter'
 gem 'bson_ext'
 # Use unicorn as the web server

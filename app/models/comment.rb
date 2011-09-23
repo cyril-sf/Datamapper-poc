@@ -1,5 +1,10 @@
 class Comment
-  include DataMapper::Mongo::Resource
+  include DataMapper::Resource
+
+  #storage_names[:mongo] = 'comments'
+  def self.default_repository_name
+    :mongo
+  end
 
   belongs_to :post
 

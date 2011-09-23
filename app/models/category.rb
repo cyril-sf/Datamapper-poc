@@ -1,9 +1,9 @@
 class Category
-  include DataMapper::Mongo::Resource
+  include DataMapper::Resource
 
   has n, :categorizations
   has n, :posts,      :through => :categorizations
 
-  property :id,         ObjectId
+  property :id,         Serial
   property :name,       String
 end

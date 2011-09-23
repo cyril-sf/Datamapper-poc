@@ -9,9 +9,13 @@ Datamapper::Application.initialize!
 DataMapper::Logger.new($stdout, :debug)
 
 # A MySQL connection:
-# DataMapper.setup(:default, 'mysql://localhost/datamapper_development')
+DataMapper.setup(:default, #'mysql://localhost/fdsa')
+  :adapter => 'mysql',
+  :database => 'fdsa',
+  :user => 'root'
+)
 
-DataMapper.setup(:default, #mongo, 'mongo://localhost/datamapper_development'
+DataMapper.setup(:mongo, #mongo, 'mongo://localhost/datamapper_development'
  :adapter  => 'mongo',
  :database => 'fdsa',
 )
