@@ -32,7 +32,7 @@ GEM
     arel (2.0.10)
     bcrypt-ruby (2.1.4)
     bson (1.4.0)
-    bson_ext (1.4.0)
+    bson_ext (1.2.4)
     builder (2.1.2)
     data_mapper (1.1.0)
       dm-aggregates (= 1.1.0)
@@ -132,9 +132,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bson_ext
+  bson_ext (~> 1.2.4)
   data_mapper
   dm-mongo-adapter
   dm-mysql-adapter
+  mongo (~> 1.2.4)
   mysql2 (~> 0.2.11)
   rails (= 3.0.10)

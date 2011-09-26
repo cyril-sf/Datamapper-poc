@@ -4,8 +4,5 @@ brew install mongodb
 mkdir -p /data/db
 
 
-require 'rubygems'
-require 'data_mapper'
-DataMapper.finalize
-require  'dm-migrations'
+Post # This is somehow required for the moment so auto_migrate! would work
 DataMapper.auto_migrate!
